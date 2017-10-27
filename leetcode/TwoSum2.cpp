@@ -5,7 +5,7 @@
 #include "leetcode.h"
 
 // 对撞指针
-vector<int> Solution::twoSum(vector<int>& numbers, int target) {
+vector<int> Solution::twoSum2(vector<int>& numbers, int target) {
 
     int l = 0, r = numbers.size() - 1;
     while (l < r) {

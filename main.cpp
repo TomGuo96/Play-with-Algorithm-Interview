@@ -9,5 +9,10 @@ int main() {
 
     Solution s;
 
-    cout<<s.lengthOfLongestSubstring("abcabcbb")<<endl;
+    vector<pair<int, int>> vi;
+    vi.push_back(make_pair(0, 0));
+    vi.push_back(make_pair(1, 0));
+    vi.push_back(make_pair(2, 0));
+    cout<<s.numberOfBoomerangs(vi);
+    cout<<endl;
 }
