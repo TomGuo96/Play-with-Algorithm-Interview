@@ -19,6 +19,8 @@ public:
     void sortColors(vector<int>& nums); // 75
     vector<int> twoSum2(vector<int>& numbers, int target); // 167
     int minSubArrayLen(int s, vector<int>& nums); // 209
+    bool containsNearbyDuplicate(vector<int>& nums, int k); // 219
+    bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t); // 220
     void moveZeroes(vector<int>& nums); // 283
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2); // 349
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2); // 350
@@ -31,7 +33,7 @@ public:
     // 438 76
     // 242 202 290 205 451
     // 3 18 16 49
-    // 149
+    // 149 217
 };
 
 #endif //PLAY_WITH_ALGORITHM_INTERVIEW_LEETCODE_H
