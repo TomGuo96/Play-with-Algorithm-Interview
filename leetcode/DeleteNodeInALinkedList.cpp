@@ -1,6 +1,7 @@
 //
 // Created by Tom Guo on 29/10/2017.
 //
+
 #include "leetcode.h"
 
 // 特殊情况下可以改变节点的值

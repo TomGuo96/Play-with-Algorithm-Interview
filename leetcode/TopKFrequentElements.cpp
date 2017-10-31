@@ -13,7 +13,7 @@ vector<int> Solution::topKFrequent(vector<int>& nums, int k) {
     for (int i = 0; i < nums.size(); i++)
         freq[nums[i]]++;
 
-    // 扫面freq，维护当前出现最高的k个元素
+    // 扫描freq，维护当前出现最高的k个元素
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq; // （频率，元素）的形式
     for (unordered_map<int, int>::iterator it = freq.begin(); it != freq.end(); it++) {
         if (pq.size() == k) {
