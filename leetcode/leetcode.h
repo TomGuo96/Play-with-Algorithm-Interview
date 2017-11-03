@@ -10,6 +10,14 @@
 
 using namespace std;
 
+// Definition for an interval.
+struct Interval {
+    int start;
+    int end;
+    Interval() : start(0), end(0) {}
+    Interval(int s, int e) : start(s), end(e) {}
+};
+
 // Definition for a binary tree node.
 struct TreeNode {
     int val;
@@ -88,11 +96,13 @@ public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2); // 349
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2); // 350
     bool canPartition(vector<int>& nums); // 416
+    int eraseOverlapIntervals(vector<Interval>& intervals); // 435
     int pathSum(TreeNode* root, int sum); // 437
     int findPath(TreeNode* node, int num); // 437_1
     int numberOfBoomerangs(vector<pair<int, int>>& points); // 447
     int dis(const pair<int, int>& pa, const pair<int, int>& pb); // 447_1
     int fourSumCount(vector<int>& A, vector<int>& B, vector<int>& C, vector<int>& D); // 454
+    int findContentChildren(vector<int>& g, vector<int>& s); // 455
 
     // TODO
     // 215 125 344 345 11
@@ -110,7 +120,7 @@ public:
     // 130 417 52 37
     // 120 64 279 91 62 63 213 309
     // 322 377 474 139 494
-    // 376
+    // 376 392
 };
 
 #endif //PLAY_WITH_ALGORITHM_INTERVIEW_LEETCODE_H
