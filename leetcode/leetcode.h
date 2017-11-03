@@ -53,6 +53,7 @@ public:
     vector<vector<string>> solveNQueens(int n); // 51
     void putQueen(int n, int index, vector<int>& row); // 51_1
     vector<string> generateBoard(int n, vector<int>& row); // 51_2
+    int climbStairs(int n); // 70
     void sortColors(vector<int>& nums); // 75
     vector<vector<int>> combine(int n, int k); // 77
     void generateCombination(int n, int k, int start, vector<int>& c); // 77_1
@@ -65,6 +66,8 @@ public:
     vector<int> preorderTraversal(TreeNode* root); // 144
     vector<int> postorderTraversal(TreeNode* root); // 145
     vector<int> twoSum2(vector<int>& numbers, int target); // 167
+    int rob(vector<int>& nums); // 198
+    int tryRob(vector<int>& nums, int index); // 198_1
     int numIslands(vector<vector<char>>& grid); // 200
     void dfs(vector<vector<char>>& grid, int x, int y); // 200_1
     ListNode* removeElements(ListNode* head, int val); // 203
@@ -76,11 +79,15 @@ public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q); // 235
     void deleteNode(ListNode* node); // 237
     vector<string> binaryTreePaths(TreeNode* root); // 257
-    int numSquares(int n); // 279
+    int numSquares(int n); // 279int integerBreak(int n)
     void moveZeroes(vector<int>& nums); // 283
+    int lengthOfLIS(vector<int>& nums); // 300
+    int integerBreak(int n); // 343
+    int breakInteger(int n); // 343_1
     vector<int> topKFrequent(vector<int>& nums, int k); // 347
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2); // 349
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2); // 350
+    bool canPartition(vector<int>& nums); // 416
     int pathSum(TreeNode* root, int sum); // 437
     int findPath(TreeNode* node, int num); // 437_1
     int numberOfBoomerangs(vector<pair<int, int>>& points); // 447
@@ -101,6 +108,9 @@ public:
     // 98 450 108 230 236
     // 93 131 47 37 40 216 78 90 401
     // 130 417 52 37
+    // 120 64 279 91 62 63 213 309
+    // 322 377 474 139 494
+    // 376
 };
 
 #endif //PLAY_WITH_ALGORITHM_INTERVIEW_LEETCODE_H
